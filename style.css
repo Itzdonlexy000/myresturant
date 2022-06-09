@@ -6,7 +6,7 @@ Global_styles
     margin: 0;
     padding: 0;
     border: 2px solid blue;        
-    box-sizing: border-box; 
+    /* box-sizing: border-box;  */
     font-family: sans-serif;
 }
 
@@ -64,7 +64,7 @@ header{
 .nav-links{
      display: flex;
      justify-content: space-around;  
-     width: 40%;
+     width: 38%;
 }
 .nav-links li{
     list-style: none;
@@ -325,6 +325,7 @@ about_section_starts
 
 .second-section .boxes{
     flex: 0 0 40%;
+    width: 100%;
     min-height: 320px;
     display: flex;
     flex-wrap: wrap;  
@@ -338,6 +339,7 @@ about_section_starts
     }
 }
 .second-section .box{
+    /* display: flex; */
     background-color:silver;
     width: 170px;
     height: 150px;
