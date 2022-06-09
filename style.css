@@ -382,7 +382,7 @@ menu_section_starts
 --------------------------- */
 
 .third-section{
-    width: 100%;
+    max-width: 100%;
     min-height: 200vh;
     background-color: white;
     color: black;
@@ -391,7 +391,7 @@ menu_section_starts
 .third-section .container{
     background: white;
     margin: auto; 
-    width: 700px;
+    max-width: 100%;
     height: 370px;
     display: flex;
     align-items: center;
@@ -400,7 +400,7 @@ menu_section_starts
 
 @media screen and (max-width:700px) {
     .third-section .container{
-         width: 400px;
+         width: 100%;
      }
 }
 .boxes{
