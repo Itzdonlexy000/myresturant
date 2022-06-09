@@ -5,7 +5,7 @@ Global_styles
 *{
     margin: 0;
     padding: 0;
-    /* border: 2px solid blue;          */
+     border: 2px solid blue;          
     box-sizing: border-box;   
     font-family: sans-serif;
 }
@@ -580,6 +580,7 @@ contact_us
  
 .fourth-section{
     width: 100%;
+    height: fit-content;
     background-color: pink;
 }
 
