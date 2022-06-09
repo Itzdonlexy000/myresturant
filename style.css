@@ -28,7 +28,7 @@ a{
 
 @keyframes myAnimation{
     from{
-        left: 10%;
+        left: 2%;
     }
     to{
         left: 2%;
@@ -36,6 +36,14 @@ a{
 }
 
 .wb{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.wb h4{
+    width: 10%;
     animation-name: myAnimation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
