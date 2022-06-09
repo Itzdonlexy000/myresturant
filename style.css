@@ -5,8 +5,8 @@ Global_styles
 *{
     margin: 0;
     padding: 0;
-    border: 2px solid blue;        
-    /* box-sizing: border-box;  */
+    /* border: 2px solid blue;          */
+    box-sizing: border-box;   
     font-family: sans-serif;
 }
 
@@ -74,9 +74,6 @@ header{
     position: relative;
     color: whitesmoke;
     font-size: 19px;
-    margin: 0 30px;
-    line-height: 40px; 
-    padding: 5px 0; 
 }
 
 .nav-links a:before{
@@ -99,7 +96,6 @@ header{
 
 .burger{
      display: none;
-     margin-right: 25px;
      cursor: pointer;
 }
 
@@ -121,7 +117,7 @@ header{
         right: 0;
         height: 90vh;
         top: 12vh;
-        width: 60%;
+        width: 55%;
         background: linear-gradient( #015934 10%,black );
         display: flex;
         flex-direction: column;
@@ -171,16 +167,22 @@ home_section
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(images/background.jpg);
     background-size: cover;
     height: 100vh;
-    padding-top: 250px; 
+    display: flex;
+    align-items: center;
 }
 .first-section .container{
     width: 1000px;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width:950px) {
+    .first-section{
+        height: 100vh;
+    }
     .first-section .container{
-        width: fit-content;
+        width: fit-content; 
         margin: auto;
     }
 }
@@ -277,7 +279,7 @@ about_section_starts
 
 .second-section{
     max-width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     background: white;
     color: black;
 }
@@ -286,6 +288,9 @@ about_section_starts
     max-width: 1000px;
     margin: auto;
     margin-top: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .second-section-title{
@@ -301,6 +306,7 @@ about_section_starts
 
 .second-section-text{
     flex: 0 0 50%;
+    padding: 10px;
     padding-top: 70px;
 }
 
@@ -308,7 +314,10 @@ about_section_starts
     .second-section-text{
         flex: 0 0 100%;
         text-align: center;
-        padding: 20px 50px;
+        padding: 20px 40px;
+    }
+    .container{
+        display: block;
     }
 }
 
@@ -324,9 +333,9 @@ about_section_starts
 
 
 .second-section .boxes{
-    flex: 0 0 40%;
+    flex: 0 0 46%;
     width: 100%;
-    min-height: 320px;
+    min-height: 300px;
     display: flex;
     flex-wrap: wrap;  
     justify-content: center; 
@@ -339,7 +348,6 @@ about_section_starts
     }
 }
 .second-section .box{
-    /* display: flex; */
     background-color:silver;
     width: 170px;
     height: 150px;
@@ -587,7 +595,7 @@ contact_us
     padding: 20px;
     background-color: pink;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
