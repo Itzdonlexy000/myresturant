@@ -11,7 +11,7 @@
         const navLinks = document.querySelectorAll('.nav-links li');
 
     //toggle_now 
-    burger.addEventListener('click', () => {
+    burger.addEventListener('click', function () {
          nav.classList.toggle('nav-active');      
     
     // buger animation
